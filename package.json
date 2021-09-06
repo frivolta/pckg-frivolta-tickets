@@ -9,7 +9,11 @@
   ],
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "del ./build/*"
+    "clean": "del ./build/*",
+    "//": [
+      "following command just for testing purposes"
+    ],
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "Filippo Rivolta",
